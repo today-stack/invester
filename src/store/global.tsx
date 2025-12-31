@@ -14,8 +14,22 @@ export type GlobalData = {
 
 const initialState: GlobalData = {
     modalOpen: false,
-    widgets: [],
-    layouts: [],
+    widgets: [
+        { i: "trader_pi", type: "TraderPiWidget", symbol: "BTCUSDT" },
+        { i: "market_pulse", type: "MarketPulseWidget", symbol: "BTCUSDT" },
+        { i: "sentiment", type: "SentimentHeatmapWidget", symbol: "BTCUSDT" },
+        { i: "sniper", type: "SniperWidget", symbol: "BTCUSDT" },
+        { i: "performance", type: "PerformanceWidget", symbol: "BTCUSDT" },
+        { i: "hourly_alpha", type: "HourlyAlphaWidget", symbol: "BTCUSDT" }
+    ],
+    layouts: [
+        { i: "trader_pi", x: 0, y: 0, w: 24, h: 4, moved: false, static: false },
+        { i: "market_pulse", x: 0, y: 4, w: 8, h: 8, moved: false, static: false },
+        { i: "sentiment", x: 8, y: 4, w: 8, h: 8, moved: false, static: false },
+        { i: "sniper", x: 16, y: 4, w: 8, h: 8, moved: false, static: false },
+        { i: "performance", x: 0, y: 12, w: 12, h: 8, moved: false, static: false },
+        { i: "hourly_alpha", x: 12, y: 12, w: 12, h: 8, moved: false, static: false }
+    ],
     board: [],
     layout_changed: false,
     theme: "light",

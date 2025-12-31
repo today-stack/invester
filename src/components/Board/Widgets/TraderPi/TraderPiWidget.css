@@ -1,0 +1,43 @@
+.trader-pi-widget {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.trader-pi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.trader-pi-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    color: var(--text-primary);
+}
+
+.trader-pi-error {
+    color: red;
+}
+
+.trader-pi-status {
+    margin-bottom: 15px;
+}
+
+.trader-pi-online {
+    color: #4caf50;
+}
+
+.trader-pi-recent-trades {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.trader-pi-trade-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}

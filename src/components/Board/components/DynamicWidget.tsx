@@ -14,6 +14,12 @@ import PodcastsWidget from "../Widgets/Podcasts/PodcastsWidget";
 import BTCHalvingWidget from "../Widgets/BTCHalving/BTCHalvingWidget";
 import BookmarksWidget from "../Widgets/Bookmarks/BookmarksWidget";
 import CoinSignalsWidget from "../Widgets/CoinSignals/CoinSignalsWidget";
+import TraderPiWidget from "../Widgets/TraderPi/TraderPiWidget";
+import SentimentHeatmapWidget from "../Widgets/Sentiment/SentimentHeatmapWidget";
+import MarketPulseWidget from "../Widgets/MarketPulse/MarketPulseWidget";
+import PerformanceWidget from "../Widgets/Performance/PerformanceWidget";
+import SniperWidget from "../Widgets/Sniper/SniperWidget";
+import HourlyAlphaWidget from "../Widgets/HourlyAlpha/HourlyAlphaWidget";
 
 export default function DynamicWidget({ widget }: DynamicWidgetProps) {
     const global = useSelector((state: GlobalData) => state);
@@ -97,6 +103,30 @@ export default function DynamicWidget({ widget }: DynamicWidgetProps) {
 
     if (widget.type === "CoinSignalsWidget") {
         return <CoinSignalsWidget id={widget.i} />;
+    }
+
+    if (widget.type === "TraderPiWidget") {
+        return <TraderPiWidget id={widget.i} />;
+    }
+
+    if (widget.type === "SentimentHeatmapWidget") {
+        return <SentimentHeatmapWidget id={widget.i} />;
+    }
+
+    if (widget.type === "MarketPulseWidget") {
+        return <MarketPulseWidget id={widget.i} />;
+    }
+
+    if (widget.type === "PerformanceWidget") {
+        return <PerformanceWidget id={widget.i} />;
+    }
+
+    if (widget.type === "SniperWidget") {
+        return <SniperWidget id={widget.i} />;
+    }
+
+    if (widget.type === "HourlyAlphaWidget") {
+        return <HourlyAlphaWidget id={widget.i} />;
     }
 
     if (widget.type === "BookmarksWidget") {

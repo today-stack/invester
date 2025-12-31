@@ -54,4 +54,34 @@ export const AVAILABLE_WIDGETS = [
         type_id: "CoinSignalsWidget",
         requirements: [],
     },
+    {
+        name: "Trader Pi",
+        type_id: "TraderPiWidget",
+        requirements: [],
+    },
+    {
+        name: "Sentiment Heatmap",
+        type_id: "SentimentHeatmapWidget",
+        requirements: [],
+    },
+    {
+        name: "Market Pulse",
+        type_id: "MarketPulseWidget",
+        requirements: [],
+    },
+    {
+        name: "Performance",
+        type_id: "PerformanceWidget",
+        requirements: [],
+    },
+    {
+        name: "Sniper (Conviction)",
+        type_id: "SniperWidget",
+        requirements: [],
+    },
+    {
+        name: "Hourly Alpha",
+        type_id: "HourlyAlphaWidget",
+        requirements: [],
+    },
 ];
